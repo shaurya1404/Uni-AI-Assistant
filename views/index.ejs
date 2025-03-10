@@ -1,0 +1,18 @@
+<section class="chat-container">
+    <h2>Ask the AI Assistant</h2>
+    <input type="text" id="questionInput" placeholder="Type your question...">
+    <button onclick="askQuestion()">Ask</button>
+
+    <!-- Frequently Asked Questions Buttons -->
+    <div class="faq-buttons">
+        <button class="faq-btn" onclick="setQuestion('What are the EECS Lab Timings?')">What are the EECS Lab Timings?</button>
+        <button class="faq-btn" onclick="setQuestion('How do I contact a professor after their Office Hours?')">How do I contact a professor after their Office Hours?</button>
+        <button class="faq-btn" onclick="setQuestion('Where can I find the course syllabus?')">Where can I find the course syllabus?</button>
+        <button class="faq-btn" onclick="setQuestion('What is the deadline for dropping a course?')">What is the deadline for dropping a course?</button>
+    </div>
+
+    <div id="response">
+        <div id="loader" class="loader"></div>
+        <div id="responseText"></div>
+    </div>
+</section>
